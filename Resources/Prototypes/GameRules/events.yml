@@ -445,6 +445,9 @@
       - id: MobAdultSlimesBlueAngry
       - id: MobAdultSlimesGreenAngry
       - id: MobAdultSlimesYellowAngry
+      - id: MobSpiderSpace
+      - id: MobBearSpace
+      - id: MobKangarooSpace
 
 - type: entity
   id: SnakeSpawnHorde
