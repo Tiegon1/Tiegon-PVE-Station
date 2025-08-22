@@ -448,6 +448,11 @@
       - id: MobSpiderSpace
       - id: MobBearSpace
       - id: MobKangarooSpace
+      - id: MobPurpleSnake
+      - id: MobSmallPurpleSnake
+      - id: MobCobraSpace
+      - id: MobGiantSpiderAngry
+      - id: MobClownSpider
 
 - type: entity
   id: SnakeSpawnHorde
