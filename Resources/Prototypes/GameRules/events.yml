@@ -458,6 +458,7 @@
       - id: MobArgocyteEnforcer
       - id: MobHivelord
       - id: MobDinosaurDilo
+      - id: MobCatSyndy
 
 
 - type: entity
