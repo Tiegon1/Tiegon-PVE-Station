@@ -456,7 +456,6 @@
       - id: MobLaserRaptor
       - id: MobArgocyteEnforcer
       - id: MobHivelord
-      - id: MobDinosaurDilo
 
 
 - type: entity
