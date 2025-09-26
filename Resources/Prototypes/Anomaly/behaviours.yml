@@ -27,6 +27,8 @@
     InconstancyParticleUnknown: 1
     InvisibilityJumping: 1
     InvisibilityJumpingReflect: 1
+    veryRapid: 1
+#    veryRapidJumpingUnknown: 1
 
 # Easy x0.5 point production
 
