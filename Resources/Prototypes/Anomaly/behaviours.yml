@@ -27,6 +27,7 @@
     InconstancyParticleUnknown: 1
     InvisibilityJumping: 1
     InvisibilityJumpingReflect: 1
+    GravityWell: 1
     veryRapid: 1
 #    veryRapidJumpingUnknown: 1
 
