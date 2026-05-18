@@ -45,7 +45,8 @@
   - Xeno
   - AllHostile
   - Dragon
-
+  - Syndicate
+  
 - type: npcFaction
   id: SimpleHostile
   hostile:
