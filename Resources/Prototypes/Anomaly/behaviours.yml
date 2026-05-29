@@ -30,6 +30,7 @@
     InvisibilityJumpingReflect: 1
     GravityWell: 1
     veryRapid: 1
+    Infection: 1
 #    veryRapidJumpingUnknown: 1
 
 # Easy x0.5 point production
