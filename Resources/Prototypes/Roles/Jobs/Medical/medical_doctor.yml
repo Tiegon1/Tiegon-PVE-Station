@@ -11,9 +11,8 @@
   startingGear: DoctorGear
   icon: "JobIconMedicalDoctor"
   supervisors: job-supervisors-cmo
-  access:
-  - Medical
-  - Maintenance
+  accessGroups:
+  - AllAccess
   extendedAccess:
   - Chemistry
   special:
