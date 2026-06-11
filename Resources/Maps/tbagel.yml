@@ -9998,7 +9998,9 @@ entities:
           -1,-3:
             0: 11194
           0,-2:
-            0: 15291
+            0: 13235
+            1: 8
+            2: 2048
           -1,-2:
             0: 48059
           0,-1:
@@ -10341,10 +10343,10 @@ entities:
             0: 56797
           5,-8:
             0: 15359
-            3: 32768
+            5: 32768
           5,-7:
             0: 61491
-            3: 136
+            5: 136
           5,-6:
             0: 65535
           5,-5:
@@ -10355,9 +10357,9 @@ entities:
             0: 65311
           6,-8:
             0: 127
-            3: 28672
+            5: 28672
           6,-7:
-            3: 119
+            5: 119
             0: 61952
           6,-6:
             0: 61695
@@ -10592,7 +10594,7 @@ entities:
             0: 65535
           7,-12:
             0: 65407
-            4: 128
+            2: 128
           7,-11:
             0: 65535
           7,-10:
@@ -71320,17 +71322,6 @@ entities:
     - type: Transform
       pos: -60.61622,-21.218712
       parent: 60
-- proto: ClothingBeltChampion
-  entities:
-  - uid: 18460
-    components:
-    - type: Transform
-      pos: 6.5002446,-6.7582207
-      parent: 60
-    - type: ContainerContainer
-      containers:
-        storagebase: !type:Container
-          ents: []
 - proto: ClothingBeltHolster
   entities:
   - uid: 9072
@@ -72328,13 +72319,6 @@ entities:
     components:
     - type: Transform
       pos: 83.621025,-13.51627
-      parent: 60
-- proto: ClothingNeckBling
-  entities:
-  - uid: 18461
-    components:
-    - type: Transform
-      pos: 5.9221196,-5.3832207
       parent: 60
 - proto: ClothingNeckCloakAdmin
   entities:
@@ -75028,14 +75012,16 @@ entities:
     - type: Transform
       pos: 3.5,-7.5
       parent: 60
+    - type: Lock
+      locked: False
     - type: EntityStorage
       air:
         volume: 200
         immutable: False
         temperature: 293.1496
         moles:
-        - 1.877957
-        - 7.0646954
+        - 1.8962268
+        - 7.133425
         - 0
         - 0
         - 0
@@ -75060,12 +75046,12 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 18442
           - 18731
-          - 18792
-          - 18823
-          - 18834
           - 18835
+          - 18834
+          - 18823
+          - 18792
+          - 18442
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -81328,13 +81314,6 @@ entities:
     - type: Transform
       pos: -62.26872,46.41094
       parent: 60
-- proto: DrinkGoldenCup
-  entities:
-  - uid: 18457
-    components:
-    - type: Transform
-      pos: 6.6877446,-6.3988457
-      parent: 60
 - proto: DrinkHotCoffee
   entities:
   - uid: 16135
@@ -81589,6 +81568,8 @@ entities:
     - type: Transform
       parent: 18368
     - type: Physics
+      angularDamping: 0
+      linearDamping: 0
       canCollide: False
     - type: InsideEntityStorage
   - uid: 18731
@@ -81596,6 +81577,8 @@ entities:
     - type: Transform
       parent: 18368
     - type: Physics
+      angularDamping: 0
+      linearDamping: 0
       canCollide: False
     - type: InsideEntityStorage
   - uid: 18781
@@ -81608,6 +81591,8 @@ entities:
     - type: Transform
       parent: 18368
     - type: Physics
+      angularDamping: 0
+      linearDamping: 0
       canCollide: False
     - type: InsideEntityStorage
   - uid: 21041
@@ -84502,7 +84487,7 @@ entities:
       pos: 36.5,-46.5
       parent: 60
     - type: Door
-      secondsUntilStateChange: -718.3621
+      secondsUntilStateChange: -848.2882
       state: Closing
   - uid: 3653
     components:
@@ -87149,6 +87134,8 @@ entities:
     - type: Transform
       parent: 18368
     - type: Physics
+      angularDamping: 0
+      linearDamping: 0
       canCollide: False
     - type: InsideEntityStorage
   - uid: 18834
@@ -87156,6 +87143,8 @@ entities:
     - type: Transform
       parent: 18368
     - type: Physics
+      angularDamping: 0
+      linearDamping: 0
       canCollide: False
     - type: InsideEntityStorage
   - uid: 18835
@@ -87163,6 +87152,8 @@ entities:
     - type: Transform
       parent: 18368
     - type: Physics
+      angularDamping: 0
+      linearDamping: 0
       canCollide: False
     - type: InsideEntityStorage
 - proto: FoodTinMRETrash
@@ -128480,13 +128471,6 @@ entities:
     - type: Transform
       pos: -63.49233,41.553234
       parent: 60
-- proto: IngotGold
-  entities:
-  - uid: 18455
-    components:
-    - type: Transform
-      pos: 6.4689946,-5.3675957
-      parent: 60
 - proto: IngotGold1
   entities:
   - uid: 7614
@@ -128503,13 +128487,6 @@ entities:
     components:
     - type: Transform
       pos: -75.40572,-38.501686
-      parent: 60
-- proto: IngotSilver
-  entities:
-  - uid: 18459
-    components:
-    - type: Transform
-      pos: 6.57388,-7.3136106
       parent: 60
 - proto: IntercomAll
   entities:
@@ -130148,13 +130125,6 @@ entities:
     - type: Transform
       pos: -57.5,-48.5
       parent: 60
-- proto: LockerFreezerVaultFilled
-  entities:
-  - uid: 2252
-    components:
-    - type: Transform
-      pos: 3.5,-5.5
-      parent: 60
 - proto: LockerHeadOfPersonnelFilled
   entities:
   - uid: 6235
@@ -131324,13 +131294,6 @@ entities:
     - type: Physics
       angularDamping: 0
       linearDamping: 0
-- proto: MaterialDiamond1
-  entities:
-  - uid: 21383
-    components:
-    - type: Transform
-      pos: 6.0860467,-7.551071
-      parent: 60
 - proto: MaterialDurathread
   entities:
   - uid: 5128
@@ -162411,13 +162374,6 @@ entities:
     - type: Transform
       pos: 10.580587,-62.46449
       parent: 60
-- proto: ToolboxGoldFilled
-  entities:
-  - uid: 18454
-    components:
-    - type: Transform
-      pos: 5.5002446,-5.3832207
-      parent: 60
 - proto: ToolboxMechanicalFilled
   entities:
   - uid: 9523
@@ -163018,13 +162974,6 @@ entities:
     - type: Physics
       angularDamping: 0
       linearDamping: 0
-- proto: UniqueLockerNanorepFilled
-  entities:
-  - uid: 1747
-    components:
-    - type: Transform
-      pos: -34.5,-26.5
-      parent: 60
 - proto: UnstableMutagenChemistryBottle
   entities:
   - uid: 8452
