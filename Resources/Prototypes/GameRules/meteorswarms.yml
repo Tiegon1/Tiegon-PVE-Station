@@ -36,6 +36,7 @@
     - id: PotatoSwarm
     - id: FunSwarm
     - id: ImmovableRodSpawn
+    - id: GameRuleXenoMeteorSwarm
 
 - type: weightedRandomEntity
   id: MeteorSpawnAsteroidWallTable
