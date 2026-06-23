@@ -173,16 +173,16 @@
     - SecurityCadet
     - TechnicalAssistant
 
-- type: entity
-  id: ClericalError
-  parent: BaseGameRule
-  components:
-  - type: StationEvent
-    startAnnouncement: station-event-clerical-error-announcement
-    minimumPlayers: 15
-    weight: 5
-    duration: 1
-  - type: ClericalErrorRule
+# - type: entity
+#   id: ClericalError
+#   parent: BaseGameRule
+#   components:
+#   - type: StationEvent
+#     startAnnouncement: station-event-clerical-error-announcement
+#     minimumPlayers: 15
+#     weight: 5
+#     duration: 1
+#   - type: ClericalErrorRule
 
 - type: entity
   parent: BaseGameRule
