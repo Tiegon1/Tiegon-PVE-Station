@@ -584,7 +584,7 @@
   parent: BaseGameRule
   components:
   - type: StationEvent
-    weight: 7
+    weight: 2
     duration: 150
     maxDuration: 300
     reoccurrenceDelay: 30
@@ -595,15 +595,15 @@
     sounds:
       collection: Paracusia
 
-- type: entity
-  parent: BaseGameRule
-  id: IonStorm
-  components:
-  - type: StationEvent
-    weight: 8
-    reoccurrenceDelay: 20
-    duration: 1
-  - type: IonStormRule
+# - type: entity
+#   parent: BaseGameRule
+#   id: IonStorm
+#   components:
+#   - type: StationEvent
+#     weight: 8
+#     reoccurrenceDelay: 20
+#     duration: 1
+#   - type: IonStormRule
 
 - type: entity
   id: GreytideVirus
