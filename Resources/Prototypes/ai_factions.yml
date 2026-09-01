@@ -30,6 +30,7 @@
   - PetsNT
   - AllHostile
   - Wizard
+  - Clown
 
 - type: npcFaction
   id: Passive
@@ -47,6 +48,7 @@
   - Dragon
   - Syndicate
   - Dino # dinosaurs
+  - Clown
   
 - type: npcFaction
   id: SimpleHostile
