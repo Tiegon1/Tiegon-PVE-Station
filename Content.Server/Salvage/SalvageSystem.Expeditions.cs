@@ -22,6 +22,7 @@ public sealed partial class SalvageSystem
     private readonly JobQueue _salvageQueue = new();
     private readonly List<(SpawnSalvageMissionJob Job, CancellationTokenSource CancelToken)> _salvageJobs = new();
     private const double SalvageJobTime = 0.002;
+    private const string ModerateDifficulty = "Moderate";
 
     private float _cooldown;
 
@@ -143,11 +144,11 @@ public sealed partial class SalvageSystem
         component.Missions.Clear();
 
         // Enumerate available difficulties once
-        var diffs = _prototypeManager.EnumeratePrototypes<Content.Shared.Procedural.SalvageDifficultyPrototype>().ToList();
+        var diffs = ProtoMan.EnumeratePrototypes<Content.Shared.Procedural.SalvageDifficultyPrototype>().ToList();
         if (diffs.Count == 0)
         {
             // fallback to moderate if none loaded
-            diffs.Add(_prototypeManager.Index<Content.Shared.Procedural.SalvageDifficultyPrototype>("Moderate"));
+            diffs.Add(ProtoMan.Index<Content.Shared.Procedural.SalvageDifficultyPrototype>(ModerateDifficulty));
         }
 
         for (var i = 0; i < MissionLimit; i++)
