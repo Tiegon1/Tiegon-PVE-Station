@@ -120,13 +120,6 @@
 # MACRO end
 
 - type: entity
-  id: MobBearSpaceInfected
-  parent: MobBearSpace
-  suffix: infected
-  components:
-  - type: ZombieTumorInfection
-
-- type: entity
   id: MobBearSpaceSalvage
   parent: MobBearSpace
   suffix: "Salvage Ruleset"
@@ -192,13 +185,6 @@
     - AnimalFriend
     - SimpleHostile
 # MACRO end
-
-- type: entity
-  id: MobKangarooSpaceInfected
-  parent: MobKangarooSpace
-  suffix: infected
-  components:
-  - type: ZombieTumorInfection
 
 - type: entity
   id: MobKangarooSpaceSalvage
@@ -304,15 +290,6 @@
       reagents:
       - ReagentId: ChloralHydrate
         Quantity: 30
-
-
-- type: entity
-  id: MobSpiderSpaceInfected
-  parent: MobSpiderSpace
-  suffix: infected
-  components:
-  - type: ZombieTumorInfection
-
 
 - type: entity
   name: space spider (fresium)
@@ -514,13 +491,6 @@
       reagents:
       - ReagentId: NorepinephricAcid
         Quantity: 30
-
-- type: entity
-  id: MobCobraSpaceInfected
-  parent: MobCobraSpace
-  suffix: infected
-  components:
-  - type: ZombieTumorInfection
 
 - type: entity
   id: MobCobraSpaceSalvage
