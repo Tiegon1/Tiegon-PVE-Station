@@ -381,8 +381,6 @@
       Unsexed: UnisexArachnid
   - type: TypingIndicator
     proto: spider
-  - type: CombatPower # Goobstation
-    factor: 1.5 # times more dangerous than a crew-member
 
 
 - type: entity
