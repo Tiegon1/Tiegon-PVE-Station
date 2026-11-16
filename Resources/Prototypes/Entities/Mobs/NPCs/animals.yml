@@ -2661,13 +2661,6 @@
       behaviors:
       - !type:ExplodeBehavior
 
-- type: entity
-  id: MobGrenadePenguinInfected
-  parent: MobGrenadePenguin
-  suffix: infected
-  components:
-  - type: ZombieTumorInfection
-
   # I have included a snake_hiss.ogg sound file so if you want to use that be my guest
 - type: entity
   name: snake
@@ -3480,13 +3473,6 @@
         Slash: 6
         Piercing: 6
         Structural: 6 # Secondary breaching
-
-- type: entity
-  id: MobCatSyndyInfected
-  parent: MobCatSyndy
-  suffix: infected
-  components:
-  - type: ZombieTumorInfection
 
 - type: entity
   name: space cat
