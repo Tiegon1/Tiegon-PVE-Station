@@ -88,13 +88,6 @@
         path: /Audio/Effects/bite.ogg
 
 - type: entity
-  id: BaseMobCarpInfected
-  parent: BaseMobCarp
-  suffix: infected
-  components:
-  - type: ZombieTumorInfection
-
-- type: entity
   parent: BaseMobCarp
   id: MobCarp
   components:
@@ -145,13 +138,6 @@
         - Opaque
   - type: TypingIndicator
     proto: robot
-
-- type: entity
-  id: MobCarpHoloInfected
-  parent: MobCarpHolo
-  suffix: infected
-  components:
-  - type: ZombieTumorInfection
 
 - type: entity
   parent: MobCarp
@@ -268,13 +254,6 @@
       types:
         Slash: 10
         Bloodloss: 5
-
-- type: entity
-  id: MobSharkInfected
-  parent: MobShark
-  suffix: infected
-  components:
-  - type: ZombieTumorInfection
 
 - type: entity
   id: MobSharkSalvage
