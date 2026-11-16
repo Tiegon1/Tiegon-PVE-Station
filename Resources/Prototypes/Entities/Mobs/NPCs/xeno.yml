@@ -119,13 +119,6 @@
     speechVerb: LargeMob
 
 - type: entity
-  id: MobXenoInfected
-  parent: MobXeno
-  suffix: infected
-  components:
-  - type: ZombieTumorInfection
-
-- type: entity
   name: praetorian
   parent: MobXeno
   id: MobXenoPraetorian
@@ -157,13 +150,6 @@
         - MobMask
         layer:
         - MobLayer
-
-- type: entity
-  id: MobXenoPraetorianInfected
-  parent: MobXenoPraetorian
-  suffix: infected
-  components:
-  - type: ZombieTumorInfection
 
 - type: entity
   name: drone
@@ -201,13 +187,6 @@
         - MobMask
         layer:
         - MobLayer
-
-- type: entity
-  id: MobXenoDroneInfected
-  parent: MobXenoDrone
-  suffix: infected
-  components:
-  - type: ZombieTumorInfection
 
 - type: entity
   name: queen
@@ -249,13 +228,6 @@
     - CannotSuicide
 
 - type: entity
-  id: MobXenoQueenInfected
-  parent: MobXenoQueen
-  suffix: infected
-  components:
-  - type: ZombieTumorInfection
-
-- type: entity
   name: ravager
   parent: MobXeno
   id: MobXenoRavager
@@ -293,13 +265,6 @@
         - MobLayer
 
 - type: entity
-  id: MobXenoRavagerInfected
-  parent: MobXenoRavager
-  suffix: infected
-  components:
-  - type: ZombieTumorInfection
-
-- type: entity
   name: runner
   parent: MobXeno
   id: MobXenoRunner
@@ -328,13 +293,6 @@
         - MobMask
         layer:
         - MobLayer
-
-- type: entity
-  id: MobXenoRunnerInfected
-  parent: MobXenoRunner
-  suffix: infected
-  components:
-  - type: ZombieTumorInfection
 
 - type: entity
   name: rouny
@@ -396,13 +354,6 @@
         - MobMask
         layer:
         - MobLayer
-
-- type: entity
-  id: MobXenoSpitterInfected
-  parent: MobXenoSpitter
-  suffix: infected
-  components:
-  - type: ZombieTumorInfection
 
 - type: entity
   name: space adder
