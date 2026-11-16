@@ -377,13 +377,6 @@
     baseWalkSpeed: 3
 
 - type: entity
-  id: MobArgocyteEnforcerInfected
-  parent: MobArgocyteEnforcer
-  suffix: infected
-  components:
-  - type: ZombieTumorInfection
-
-- type: entity
   parent: BaseMobArgocyte
   id: MobArgocyteFounder
   name: founder
@@ -426,13 +419,6 @@
   - type: MovementSpeedModifier
     baseSprintSpeed : 3
     baseWalkSpeed: 3
-
-- type: entity
-  id: MobArgocyteFounderInfected
-  parent: MobArgocyteFounder
-  suffix: infected
-  components:
-  - type: ZombieTumorInfection
 
 - type: entity
   parent: BaseMobArgocyte
