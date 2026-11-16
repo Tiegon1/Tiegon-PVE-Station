@@ -130,6 +130,7 @@
       graph: !type:CreateVariants
         values: [ GasUnary, GasUnaryAlt1, GasUnaryAlt2 ]
       node: passivevent
+    - type: VentCritterSpawnLocation
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentOpening
     - type: GuideHelp
@@ -188,6 +189,7 @@
       graph: !type:CreateVariants
         values: [ GasUnary, GasUnaryAlt1, GasUnaryAlt2 ]
       node: ventscrubber
+    - type: VentCritterSpawnLocation
     - type: AmbientSound
       enabled: true
       volume: -12

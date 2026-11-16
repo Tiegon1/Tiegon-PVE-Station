@@ -6,27 +6,32 @@
     Light: 0.5
     FullSafe: 0.1
   #balanced
-    Balanced: 3
+    Balanced: 0.5
     DelayedForce: 1
     Rapid: 1
     BalancedSecret: 1
     Reflect: 1
     NonSensivity: 1
     Sensivity: 1
+    PulsingGravity: 1
   #Hard
-    Fast: 0.5
-    Strenght: 0.5
-    Inconstancy: 0.5
-    InconstancyParticle: 0.5
-    FullUnknown: 0.5
-    Jumping: 0.3
-    Invisibility: 0.5
+    Fast: 1
+    Strenght: 1
+    Inconstancy: 1
+    InconstancyParticle: 1
+    FullUnknown: 1
+    Jumping: 1
+    Invisibility: 1
   #Complex
-    FastUnknown: 0.2
-    JumpingUnknown: 0.1
-    InconstancyParticleUnknown: 0.1
-    InvisibilityJumping: 0.1
-
+    FastUnknown: 1
+    JumpingUnknown: 1
+    InconstancyParticleUnknown: 1
+    InvisibilityJumping: 1
+    InvisibilityJumpingReflect: 1
+    GravityWell: 1
+    veryRapid: 1
+    Infection: 1
+#    veryRapidJumpingUnknown: 1
 
 # Easy x0.5 point production
 
@@ -69,6 +74,20 @@
   description: anomaly-behavior-rapid
   pulseFrequencyModifier: 0.5
   pulsePowerModifier: 0.5
+
+- type: anomalyBehavior
+  id: PulsingGravity
+  earnPointModifier: 1.1
+  description: anomaly-behavior-pulsing-gravity
+  components:
+  - type: GravityWell
+    baseRadialAcceleration: 6
+    baseTangentialAcceleration: 0.5
+    maxRange: 4
+    gravPulsePeriod: 3
+  - type: SingularityDistortion
+    intensity: 800
+    falloffPower: 2.5
 
 - type: anomalyBehavior
   id: BalancedSecret

@@ -173,16 +173,16 @@
     - SecurityCadet
     - TechnicalAssistant
 
-- type: entity
-  id: ClericalError
-  parent: BaseGameRule
-  components:
-  - type: StationEvent
-    startAnnouncement: station-event-clerical-error-announcement
-    minimumPlayers: 15
-    weight: 5
-    duration: 1
-  - type: ClericalErrorRule
+# - type: entity
+#   id: ClericalError
+#   parent: BaseGameRule
+#   components:
+#   - type: StationEvent
+#     startAnnouncement: station-event-clerical-error-announcement
+#     minimumPlayers: 15
+#     weight: 5
+#     duration: 1
+#   - type: ClericalErrorRule
 
 - type: entity
   parent: BaseGameRule
@@ -445,6 +445,18 @@
       - id: MobAdultSlimesBlueAngry
       - id: MobAdultSlimesGreenAngry
       - id: MobAdultSlimesYellowAngry
+      - id: MobSpiderSpace
+      - id: MobBearSpace
+      - id: MobKangarooSpace
+      - id: MobPurpleSnake
+      - id: MobSmallPurpleSnake
+      - id: MobCobraSpace
+      - id: MobGiantSpiderAngry
+      - id: MobClownSpider
+      - id: MobLaserRaptor
+      - id: MobArgocyteEnforcer
+      - id: MobHivelord
+
 
 - type: entity
   id: SnakeSpawnHorde
@@ -572,7 +584,7 @@
   parent: BaseGameRule
   components:
   - type: StationEvent
-    weight: 7
+    weight: 1
     duration: 150
     maxDuration: 300
     reoccurrenceDelay: 30
@@ -583,15 +595,15 @@
     sounds:
       collection: Paracusia
 
-- type: entity
-  parent: BaseGameRule
-  id: IonStorm
-  components:
-  - type: StationEvent
-    weight: 8
-    reoccurrenceDelay: 20
-    duration: 1
-  - type: IonStormRule
+# - type: entity
+#   parent: BaseGameRule
+#   id: IonStorm
+#   components:
+#   - type: StationEvent
+#     weight: 8
+#     reoccurrenceDelay: 20
+#     duration: 1
+#   - type: IonStormRule
 
 - type: entity
   id: GreytideVirus

@@ -1447,7 +1447,7 @@
   name: gorilla
   parent: [ SimpleMobBase, MobCombat, BaseMobDestructible ]
   id: MobGorilla
-  description: Smashes, roars, looks cool. Don't stand near one.
+  description: Smashes, roars, looks cool. Now Trained by NT! stand near one!.
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -1496,7 +1496,7 @@
   - type: FactionException
   - type: NpcFactionMember
     factions:
-    - Passive
+    - PetsNT
   - type: HTN
     rootTask:
       task: SimpleHostileCompound
@@ -3445,17 +3445,11 @@
         Base: syndicat_dead
       Dead:
         Base: syndicat_dead
-  - type: GhostRole
-    prob: 1
-    name: ghost-role-information-SyndiCat-name
-    allowMovement: true
-    description: ghost-role-information-SyndiCat-description
-    rules: ghost-role-information-SyndiCat-rules
-    mindRoles:
-    - MindRoleGhostRoleTeamAntagonist
-    raffle:
-      settings: default
-  - type: GhostTakeoverAvailable
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
   - type: AutoImplant
     implants:
     - MicroBombImplant

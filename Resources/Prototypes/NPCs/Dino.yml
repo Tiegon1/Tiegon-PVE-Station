@@ -1,0 +1,42 @@
+# SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 taydeo <td12233a@gmail.com>
+#
+# SPDX-License-Identifier: MIT
+
+- type: htnCompound
+  id: DinoCompound
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: MeleeCombatCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: DestructionCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompound
+
+- type: htnCompound
+  id: RexCompound
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: RexMeleeCombatWithChaseCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: DestructionCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompound
+
+- type: htnCompound
+  id: RexMeleeCombatWithChaseCompound
+  branches:
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:PlaySoundOperator
+            sound:
+              path: /Audio/Animals/t-rex-roar.ogg
+        - !type:HTNCompoundTask
+          task: MeleeCombatWithChaseCompound
