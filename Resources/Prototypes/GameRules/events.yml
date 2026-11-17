@@ -7,11 +7,9 @@
     - id: BluespaceLocker
     - id: BreakerFlip
     - id: BureaucraticError
-    - id: ClericalError
     - id: CockroachMigration
     - id: GasLeak
     - id: GreytideVirus
-    - id: IonStorm # its calm like 90% of the time smh
     - id: KudzuGrowth
     - id: MassHallucinations
     - id: MouseMigration
@@ -172,17 +170,6 @@
     - MedicalIntern
     - SecurityCadet
     - TechnicalAssistant
-
-# - type: entity
-#   id: ClericalError
-#   parent: BaseGameRule
-#   components:
-#   - type: StationEvent
-#     startAnnouncement: station-event-clerical-error-announcement
-#     minimumPlayers: 15
-#     weight: 5
-#     duration: 1
-#   - type: ClericalErrorRule
 
 - type: entity
   parent: BaseGameRule
@@ -594,16 +581,6 @@
     maxSoundDistance: 7
     sounds:
       collection: Paracusia
-
-# - type: entity
-#   parent: BaseGameRule
-#   id: IonStorm
-#   components:
-#   - type: StationEvent
-#     weight: 8
-#     reoccurrenceDelay: 20
-#     duration: 1
-#   - type: IonStormRule
 
 - type: entity
   id: GreytideVirus
