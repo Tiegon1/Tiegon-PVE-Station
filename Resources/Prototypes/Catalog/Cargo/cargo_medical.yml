@@ -138,12 +138,13 @@
   category: cargoproduct-category-name-medical
   group: market
 
-- type: cargoProduct
-  id: MedicalPatches
-  icon:
-    sprite: Objects/Specific/Medical/firstaidkits.rsi
-    state: advkit
-  product: CratePatches
-  cost: 300
-  category: cargoproduct-category-name-medical
-  group: market
+#Patches do not exist in forky at this moment
+# - type: cargoProduct
+#   id: MedicalPatches
+#   icon:
+#     sprite: Objects/Specific/Medical/firstaidkits.rsi
+#     state: advkit
+#   product: CratePatches
+#   cost: 300
+#   category: cargoproduct-category-name-medical
+#   group: market
