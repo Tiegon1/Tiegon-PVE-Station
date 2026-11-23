@@ -158,15 +158,16 @@
   category: cargoproduct-category-name-armory
   group: market
 
-- type: cargoProduct
-  id: ArmoryKardashev-Mosin
-  icon:
-    sprite: Objects/Weapons/Guns/Rifles/foam_rifle.rsi
-    state: icon
-  product: WeaponSniperMosin
-  cost: 3000
-  category: cargoproduct-category-name-armory
-  group: market
+# There already exists a mosin crate, we don't need two
+# - type: cargoProduct
+#   id: ArmoryKardashev-Mosin
+#   icon:
+#     sprite: Objects/Weapons/Guns/Rifles/foam_rifle.rsi
+#     state: icon
+#   product: WeaponSniperMosin
+#   cost: 3000
+#   category: cargoproduct-category-name-armory
+#   group: market
 
 - type: cargoProduct
   id: ArmoryInspector

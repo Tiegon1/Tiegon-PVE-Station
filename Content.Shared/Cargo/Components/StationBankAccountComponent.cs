@@ -21,13 +21,13 @@ public sealed partial class StationBankAccountComponent : Component
     /// When giving funds to a particular account, the proportion of funds they should receive compared to remaining accounts.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public double PrimaryCut = 0.50;
+    public double PrimaryCut = 1f;
 
     /// <summary>
     /// When giving funds to a particular account from an override sell, the proportion of funds they should receive compared to remaining accounts.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public double LockboxCut = 0.75;
+    public double LockboxCut = 0f;
 
     /// <summary>
     /// A dictionary corresponding to the money held by each cargo account.
@@ -35,12 +35,12 @@ public sealed partial class StationBankAccountComponent : Component
     [DataField, AutoNetworkedField]
     public Dictionary<ProtoId<CargoAccountPrototype>, int> Accounts = new()
     {
-        { "Cargo",       2000 },
-        { "Engineering", 1000 },
-        { "Medical",     1000 },
-        { "Science",     1000 },
-        { "Security",    1000 },
-        { "Service",     1000 },
+        { "Cargo",       5 },
+        { "Engineering", 0 },
+        { "Medical",     0 },
+        { "Science",     0 },
+        { "Security",    0 },
+        { "Service",     0 },
     };
 
     /// <summary>

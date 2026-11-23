@@ -15,13 +15,17 @@
     - id: MouseMigration
     - id: PowerGridCheck
     - id: RandomSentience
-    - id: SlimesSpawnHorde
     - id: SolarFlare
-    - id: SnakeSpawnHorde
-    - id: SpiderClownSpawnHorde
-    - id: SpiderSpawnHorde
     - id: VentClog
     - id: UtilityLineRupture # Funky Station
+    - id: EasyMob
+    - id: MediumMob
+    - id: HardMob
+    - id: HardestMob
+    - id: SyndyMob
+    - id: SneakySyndy
+    - id: SneakySnake
+    # - id: LiquidSlimeOutbreak
 
 - type: entityTable
   id: BasicAntagEventsTable
@@ -714,3 +718,300 @@
     delay:
       min: 0
       max: 0
+      
+- type: entity
+  id: EasyMob
+  parent: BaseStationEventShortDelay
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio: Attention
+    earliestStart: 20
+    minimumPlayers: 1
+    weight: 5
+    duration: 30
+  - type: VentCrittersRule
+    entries: # rolls EACH probability for EVERY spawn point - example, if you have 5 entries each with a prob of 0.06 you'll have about a 3% chance (5 * 0.06 = 0.3) to get a mob on each vent (you could get all of them!)
+    # - id: MobBloodCultShade
+      # prob: 0.003
+    - id: MobCarpHolo
+      prob: 0.003
+    - id: MobCarpRainbow
+      prob: 0.003
+    - id: MobCarpMagic
+      prob: 0.003
+    - id: MobCarp
+      prob: 0.05
+    - id: MobArgocyteSwiper
+      prob: 0.003
+    # - id: MobArgocyteSwiperInfected
+      # prob: 0.0003
+    - id: MobHonkBot
+      prob: 0.0003
+    - id: MobIronCrab
+      prob: 0.003
+    - id: MobQuartzCrab
+      prob: 0.003
+    - id: MobUraniumCrab
+      prob: 0.003
+    - id: MobSilverCrab
+      prob: 0.003
+    - id: MobArgocyteMolder
+      prob: 0.003
+    # - id: MobArgocyteMolderInfected
+      # prob: 0.0003
+    - id: MobJonkBot
+      prob: 0.0003
+    - id: MobArgocyteHarvester
+      prob: 0.003
+    # - id: MobArgocyteHarvesterInfected
+      # prob: 0.0003
+    - id: MobArgocyteGlider
+      prob: 0.003
+    # - id: MobArgocyteGliderInfected
+      # prob: 0.0003
+    # - id: BaseMobCarpInfected
+      # prob: 0.001
+    # - id: MobCarpHoloInfected
+      # prob: 0.0003
+    - id: MobWatcherLavaland
+      prob: 0.001
+    - id: MobWatcherIcewing
+      prob: 0.001
+    - id: MobWatcherMagmawing
+      prob: 0.001
+
+- type: entity
+  id: MediumMob
+  parent: BaseStationEventShortDelay
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio: Attention
+    earliestStart: 30
+    minimumPlayers: 1
+    weight: 3
+    duration: 30
+  - type: VentCrittersRule
+    entries:
+    - id: MobAdultSlimesBlueAngry
+      prob: 0.003
+    - id: MobAdultSlimesGreenAngry
+      prob: 0.003
+    - id: MobAdultSlimesYellowAngry
+      prob: 0.003
+    - id: MobSpiderSpace
+      prob: 0.003
+    # - id: MobSpiderSpaceInfected
+      # prob: 0.0002
+    - id: MobBearSpace
+      prob: 0.003
+    # - id: MobBearSpaceInfected
+      # prob: 0.0002
+    - id: MobKangarooSpace
+      prob: 0.003
+    # - id: MobKangarooSpaceInfected
+      # prob: 0.0003      
+    - id: MobPurpleSnake
+      prob: 0.003
+    - id: MobSmallPurpleSnake
+      prob: 0.003
+    # - id: MobPurpleSnakeInfected
+      # prob: 0.0001
+    - id: MobCobraSpace
+      prob: 0.003
+    # - id: MobCobraSpaceInfected
+      # prob: 0.0003
+    - id: MobGiantSpiderAngry
+      prob: 0.003
+    - id: MobClownSpider
+      prob: 0.003
+    - id: MobLaserRaptor
+      prob: 0.003
+    - id: MobArgocyteEnforcer
+      prob: 0.003
+    # - id: MobArgocyteEnforcerInfected
+      # prob: 0.0003
+    - id: MobHivelord
+      prob: 0.003
+    - id: MobShark
+      prob: 0.003
+    - id: MobSharkInfected
+      prob: 0.0003
+    - id: MobArgocytePouncer
+      prob: 0.003
+    # - id: MobArgocytePouncerInfected
+      # prob: 0.0003
+    - id: MobCorgiCerberus
+      prob: 0.003
+    - id: MobArgocyteCrawler
+      prob: 0.003
+    # - id: MobArgocyteCrawlerInfected
+      # prob: 0.0003
+    - id: MobWatcherLavaland
+      prob: 0.001
+    - id: MobWatcherIcewing
+      prob: 0.001
+    - id: MobWatcherMagmawing
+      prob: 0.001
+
+- type: entity
+  id: HardMob
+  parent: BaseStationEventShortDelay
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio: Attention
+    earliestStart: 40
+    minimumPlayers: 1
+    weight: 2
+    duration: 30
+  - type: VentCrittersRule
+    entries:
+    # - id: MobDinosaurPara
+      # prob: 0.01
+    # - id: MobDinosaurCompy
+      # prob: 0.01
+    # - id: MobDinosaurRaptor
+      # prob: 0.01
+    - id: MobGoliath
+      prob: 0.01
+    - id: MobRatKing
+      prob: 0.01
+    # - id: MobDinosaurDilo
+      # prob: 0.01
+    - id: MobWatcherLavaland
+      prob: 0.001
+    - id: MobWatcherIcewing
+      prob: 0.001
+    - id: MobWatcherMagmawing
+      prob: 0.001
+      
+- type: entity
+  id: HardestMob
+  parent: BaseStationEventShortDelay
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio: Attention
+    earliestStart: 50
+    minimumPlayers: 1
+    weight: 0.6
+    duration: 30
+  - type: VentCrittersRule
+    entries:
+    # - id: MobDinosaurSpino
+      # prob: 0.003
+    # - id: MobDinosaurStego
+      # prob: 0.003
+    # - id: MobDinosaurTrike
+      # prob: 0.003
+    # - id: MobDinosaurTrex
+      # prob: 0.002
+    # - id: MobDinosaurKentro
+      # prob: 0.003
+    - id: MobDragon
+      prob: 0.008
+    - id: MobRatKingBuff
+      prob: 0.002
+    - id: MobArgocyteLeviathing
+      prob: 0.005
+    # - id: MobArgocyteLeviathingInfected
+      # prob: 0.0002
+    # - id: MobDinosaurAnki
+      # prob: 0.003
+      
+- type: entity
+  id: SyndyMob
+  parent: BaseStationEventShortDelay
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio: Attention
+    earliestStart: 30
+    minimumPlayers: 1
+    weight: 0.5
+    duration: 30
+  - type: VentCrittersRule
+    entries:
+    # - id: MobMothSyndy
+      # prob: 0.04    
+    - id: MobCatSyndy
+      prob: 0.01
+    - id: MobGrenadePenguin
+      prob: 0.001
+      
+- type: entity
+  id: SneakySyndy
+  parent: BaseStationEventShortDelay
+  components:
+  - type: StationEvent
+    earliestStart: 20
+    minimumPlayers: 1
+    weight: 0.5
+    duration: 30
+  - type: VentCrittersRule
+    entries:
+    # - id: MobMothSyndy
+      # prob: 0.02    
+    - id: MobCatSyndy
+      prob: 0.009
+    - id: MobGrenadePenguin
+      prob: 0.005   
+      
+- type: entity
+  id: SneakySnake
+  parent: BaseStationEventShortDelay
+  components:
+  - type: StationEvent
+    earliestStart: 20
+    minimumPlayers: 1
+    weight: 3
+    duration: 30
+  - type: VentCrittersRule
+    entries:
+    - id: MobSpiderSpace
+      prob: 0.008
+    - id: MobCobraSpace
+      prob: 0.01
+    # - id: MobBloodCultShade
+      # prob: 0.005
+
+# - type: entity
+  # id: LiquidSlimeOutbreak
+  # parent: BaseStationEventShortDelay
+  # components:
+  # - type: StationEvent
+    # earliestStart: 20
+    # minimumPlayers: 1
+    # weight: 3
+    # duration: 1
+    # maxOccurrences: 1
+  # - type: LiquidSlimeRule
+    # liquidThreshold: 350
+    # minSlimesToSpawn: 2
+    # maxSlimesToSpawn: 6
+    # puddleRange: 2
+    # slimePrototypes:
+    # - MobAdultSlimesBlueAngry
+    # - MobAdultSlimesBlueAngry
+    # - MobAdultSlimesBlueAngry
+    # - MobAdultSlimesGreenAngry
+    # - MobAdultSlimesGreenAngry
+    # - MobAdultSlimesGreenAngry
+    # - MobAdultSlimesYellowAngry
+    # - MobAdultSlimesYellowAngry
+    # - MobAdultSlimesYellowAngry
+    # - ReagentSlime
+    # - ReagentSlimeBeer
+    # - ReagentSlimePax
+    # - ReagentSlimeNocturine
+    # - ReagentSlimeTHC
+    # - ReagentSlimeSalicylicAcid
+    # - ReagentSlimeToxin
+    # - ReagentSlimeNapalm
+    # - ReagentSlimeOmnizine
+    # - ReagentSlimeMuteToxin
+    # - ReagentSlimeNorepinephricAcid
+    # - ReagentSlimeEphedrine
+    # - ReagentSlimeRobustHarvest

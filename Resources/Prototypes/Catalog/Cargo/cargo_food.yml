@@ -61,8 +61,8 @@
 - type: cargoProduct
   id: DonkMicrowave
   icon:
-    sprite: Objects/Consumable/Food/microwave.rsi
-    state: icon
+    sprite: Structures/Machines/microwave_syndie.rsi
+    state: mw
   product: SyndicateMicrowaveMachineCircuitboard
   cost: 4000
   category: cargoproduct-category-name-food
